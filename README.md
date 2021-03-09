@@ -11,10 +11,10 @@ Sample project with examples of implementations usando Microservices and Azure D
 - Deploying microservices
 
 # What I'm using
+Microservice Architectural
 ASP.NET Core 3.1
 Entity Framework
 AutoMapper
 Polly
-Azure DevOps
-
-# Referer
+Docker
+Azure DevOps (CI, CD)

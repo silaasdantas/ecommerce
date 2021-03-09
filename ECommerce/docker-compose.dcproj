@@ -2,14 +2,13 @@
 <Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
-    <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>dc8c4656-15e1-4323-8df4-cb91d696da90</ProjectGuid>
+    <DockerTargetOS>Windows</DockerTargetOS>
+    <ProjectGuid>2c57eef8-5a21-4066-a9d2-6fef40712f58</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
-    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/api/search</DockerServiceUrl>
+    <DockerServiceUrl>{Scheme}://{ServiceIPAddress}{ServicePort}/api/search</DockerServiceUrl>
     <DockerServiceName>ecommerce.api.search</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="docker-compose.asf.yml" />
     <None Include="docker-compose.override.yml">
       <DependentUpon>docker-compose.yml</DependentUpon>
     </None>
