@@ -12,8 +12,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "6003:80"
-
-
+    
   ecommerce.api.products:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
@@ -29,3 +28,4 @@ services:
       - Services__Orders=http://ecommerce.api.orders
     ports:
       - "6004:80"
+

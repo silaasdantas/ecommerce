@@ -2,30 +2,28 @@ version: '3.4'
 
 services:
   customers:
-  image: silaasdantas/ecommerceapicustomers:latest
+    image: silaasdantas/ecommerceapicustomers:latest
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "80/http"
 
   orders:
-  image: silaasdantas/ecommerceapiorders:latest
+    image: silaasdantas/ecommerceapiorders:latest
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "80/http"
-
-
+    
   products:
-  image: silaasdantas/ecommerceapiproducts:latest
+    image: silaasdantas/ecommerceapiproducts:latest
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "80/http"
-
 
   search:
-  image: silaasdantas/ecommerceapisearch:latest
+    image: silaasdantas/ecommerceapisearch:latest
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - Services__Products=http://10.0.0.4:19081/lil/products
@@ -33,4 +31,3 @@ services:
       - Services__Orders=http://10.0.0.4:19081/lil/orders
     ports:
       - "6004:80"
-
